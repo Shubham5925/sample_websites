@@ -1,0 +1,1012 @@
+<!Doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="keyword" content="html, css ,javascript">
+<mets name="description" content ="free website making and practising">
+<meta name="author" content="shubham singh">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link rel="stylesheet" href="sample.css"> 
+
+<title>sample_website</title>
+</head>
+
+<body bgcolor="white">
+
+<!--1-Inline Css -->
+<p><font size="10" color="blue"><center>Hello to my sample website</center></font></p>
+
+<!-- 2-Internal css   ,using style keyword-->
+
+<h1>Welcome to CSS</h1>
+<style>
+h1{
+	color:blue;
+	size:7;
+}
+</style>
+
+<!-- 3-External css -->
+<div>
+<p id="sample">READY</p>
+<div>
+
+
+
+<!--selectors-->
+<!--1-By Element-->
+<p> selecting methods - 1-By element</p>
+<style>
+p{
+	color:red;
+	
+}
+</style>
+
+<!-- selecting method 2-By Id-->
+
+<style>
+#heading{
+	color:green;
+	font="impact";
+}
+</style>
+<p id="heading" >selecting method- 2-By Id</p>	
+
+
+<!-- selecting method 3-By group-->
+<style>
+.heading
+{
+	color:Blue;
+	font="Impact";
+}
+</style>
+
+<p class="heading" >selecting method by 3-By class </p>
+
+<!-- selecting method 4-By Universal method-->
+<style>
+*{
+	color:blue;
+	font="impact";
+}
+</style>
+<p >selecting method by 4-By universal method</p>
+
+<!-- selecting by group method-->
+
+<style>
+mark
+{
+	color:white;
+	font:impact;
+}
+</style>
+
+<mark>slecting method by 5-group method</mark>
+
+
+<!-- Javascript started -->
+
+<!-- 1-alert() -just give an alert message-->
+<script>
+    alert("Welcome to java script")
+</script>
+
+<!-- 2-confirm() - it ask for ok/cancel and return true or false to the user-->
+<script>
+	confirm("Login to JS")
+</script>
+
+<!-- 3-console.log() -write information to browser -->
+<script>
+	console.log("JS is case sensitive language")
+</script>
+
+<!-- 4-document.write() -directly write to html document -->
+<script>
+	document.write("JS tutorials")
+</script>
+
+<!-- 5-prompt() -create a dilogue box for user to input at top-->
+<script>
+prompt("Hello" , "JS")
+</script>
+
+
+
+
+
+<!-- CSS attributes started -->
+
+<!-- 1-Assent color-->
+<style>
+
+input[type=checkbox]
+{
+	assent-color:red;
+
+}
+
+input[type=radio]
+{
+	accent-color:green;
+}
+
+input[type=range]
+{
+	assent-color:rgb(0,0,255);
+}
+
+progress
+{
+	accent-color:hsl(39,100%,50%);
+}
+</style>
+
+<h1>Changing the checkbox color when ticked:</h1><br><br>
+<input type="checkbox" name="vehicle1" checked>I have a bike <br>
+<input type="checkbox" name="vehicle2" checked>I have a car<br>
+
+<h1>Changing the color of radiobuttons when ticked</h1><br><br>
+<input type="radio" name="fav_language" value="Html">HTML<br>
+<input type="radio" name="fav_language" value="Css">CSS<br>
+
+<h1>Changing color of range bar when slided</h1><br><br>
+<label for="volume">Volume</label>
+<input type="range" name="volume" id="volume" value="vol" min=0 max=100><br> 
+
+<h1>Chaging color for file upladed </h1><br>
+<label for="file"> Downloading progress</label><br>
+<progress id="file" value="72" max="100" >72%</progress> <br>
+<br>
+
+
+
+<!--2-Align content-->
+
+<div>
+<style>
+#main
+{
+	height:400px;
+	width:100px;
+	border:1px solid black;
+	display:flex;
+	flex-wrap:wrap;
+	align-center:center;
+}
+
+#main div
+{
+	width:70px;
+	height:70px;
+}
+
+</style>
+
+<div id="main">
+<div style="background-color:coral;"></div>
+<div style="background-color:pink;"></div>
+</div>
+</div>
+
+<br>
+
+<!-- 3-Align-items -->
+
+<style>
+#main
+{
+	width:220px;
+	height:300px;
+	border:2px solid black;
+	display:flex;
+	align-items:center;
+}
+
+#main div
+{
+	flex:1;
+	border:1px solid black;
+	display:flex;
+	align-items:center;
+}
+</style>
+
+<div id="main">
+<div style="background-color:coral; min-height:30px; ">RED</div>
+<div style="background-color:lightblue; min-height:50px; ">BLUE</div>
+<div style="background-color:lightgreen; min-height:190px; ">GREEN</div>
+</div>
+	
+
+<br>
+<br>
+
+<!-- 4-Background -->
+<style>
+#back_ground
+{
+	background: lightblue url("img_tree.gif")
+no-repeat fixed center;
+	padding:10px;
+	spacing:10px;
+	border:2px dotted black;
+}
+</style>
+<p id="back_ground">This is background color </p>
+
+
+
+<img  src=""C:\Users\shubh\Downloads\yu-chin-tsai-piTEABtlR1Q-unsplash.jpg"" width="50" height="50">
+
+<!-- 4-Background clip-->
+<style>
+ #box{
+	height:50px;
+	width:50px;
+	border:5px solid red;
+	padding :10px;
+	background-color:blue;
+	align-center:center;
+}
+
+</style>
+
+<div  id="box">
+<p>Here box is created</p>
+</div>
+
+
+
+
+
+<!-- 5-border-->
+<style>
+#border1
+{
+	border:2px solid red;
+	border:3px dotted red;
+	border:4px double red;
+}
+</style>
+<div id="border1">
+<p>Hello border properties it is:-</p>
+</div>
+
+<!--<img src="C:\Users\shubh\Downloads\flower.jpg" width="200px" height="300px"> -->
+
+
+
+
+
+
+<style>
+#background1
+{
+	background-image:url("flower.jpg");
+	background-repeat:no-repeat;
+	background-attachment:fixed;
+	background-position:center;
+}
+</style>
+<div id="background1">
+<img src="C:\Users\shubh\Downloads\flower.jpg" width="300px" height="300px"> 
+</div>
+
+
+
+
+
+<style>
+#background2
+{
+	background-image:url("flower.jpg");
+	background-color:white;
+	background-position-x:center;
+	background-position-y:center;
+	background-align:center;
+	padding:10px;
+}
+</style>
+<div id="background2">
+<img src="C:\Users\shubh\Downloads\flower.jpg" width="300px" height="300px"> 
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- BORDER -->
+
+<style>
+#border_prop1
+{
+	border:5px solid black;
+	padding:10px;
+	text-align:center;
+}
+#border_prop2
+{
+	border:4px dotted black;
+	padding:10px;
+	text-align:center;
+}
+#border_prop3
+{	
+	border:3px double black;
+	padding:10px;
+	text-align:center;
+}
+#border_prop4
+{
+	border-bottom:5px solid blue;
+}
+#border_prop5
+{
+	border-bottom:5px dotted blue;
+}
+#border_prop6
+{	
+	border-bottom:5px double blue;
+}
+#border_prop7
+{
+	border-left:5px solid black;
+}
+#border_prop8
+{
+	border-left:5px dotted black;
+}
+#border_prop9
+{	
+	border-left:5px double black;
+}
+#border_prop10
+{
+	border-right:5px solid black;
+}
+#border_prop11
+{
+	border-right:5px dotted black;
+}
+#border_prop12
+{
+	border-right:5px double black;
+}
+#border_prop13
+{
+	border-right:5px solid rder;
+}
+
+</style>
+
+<div>
+<p id="border_prop1"><b>HELLO CSS !!!</b></p>
+<p id="border_prop2"><b>HELLO CSS !!!</b></p>
+<p id="border_prop3"><b>HELLO CSS !!!</b></p>
+<p id="border_prop4"><b>HELLO CSS !!!</b></p>
+<p id="border_prop5"><b>HELLO CSS !!!</b></p>
+<p id="border_prop6"><b>HELLO CSS !!!</b></p>
+<p id="border_prop7"><b>HELLO CSS !!!</b></p>
+<p id="border_prop8"><b>HELLO CSS !!!</b></p>
+<p id="border_prop9"><b>HELLO CSS !!!</b></p>
+<p id="border_prop10"><b>HELLO CSS !!!</b></p>
+<p id="border_prop11"><b>HELLO CSS !!!</b></p>
+<p id="border_prop12"><b>HELLO CSS !!!</b></p>
+</div>
+
+
+<style>
+#a1
+{
+	
+	border:5px solid black;
+	border-bottom-left-radius:15px;
+	border-bottom-right-radius:15px;
+	border-top-left-radius:25px;
+	border-top-right-raidius:15px;
+	padding:10px;
+	text-align:center;
+	text-background-color:lightblue;
+	border-bottom-width:10px;
+	
+	
+}
+</style>
+<div>
+<p id="a1">HELLO CSS.css Welcome to 
+</div>	
+
+
+
+
+
+<style>
+#right
+{
+	border-right:5px solid black;
+	border-right-style:solid;
+	border-bottom-right-rdo
+	text-align:center;
+}
+</style>
+<div>
+<p id="right">HELLO CSS</p>
+</div>
+
+<br>
+<br>
+<br>
+<br>
+
+
+<style>
+#box1
+{
+	border-style:solid;
+	border-color:black;
+	height:100px;
+	width:100px;
+	text-align:center;
+	text-color:blue;
+	padding:15px;
+	background-color:lightblue;
+	background-image:url(flower.jpg);
+	z-index:-1;
+	-webzkit-image-reflect:below;
+}
+</style>
+<div id="box1">
+<p>hello to border to right size</p><br><br>
+<img src="C:\Users\shubh\Downloads\flower.jpg" height="100px   width= "100px"> 
+</div>
+
+
+<style>
+.clip
+{
+	position:absolute;
+	clip:rect(0px,60px,200px,0px);
+}
+</style>
+<div class="clip">
+<img src="C:\Users\shubh\Downloads\flower.jpg" width="200px" height="100px">
+</div>
+
+
+<style>
+#column_count
+{
+	column_count:3;
+}
+</style>
+<div>
+<p id="column_count">	border-left:5px solid black;
+}
+#border_prop8
+{
+	border-left:5px dotted black;
+}
+#border_prop9
+{	
+	border-left:5px double black;
+}
+#border_prop10
+{
+	border-right:5px solid black;
+}
+#border_prop11
+{
+	border-right:5px dotted black;
+}
+#border_prop12
+{
+	border-right:5px double black;
+}
+#border_prop13
+{
+	border-right:5px solid rder;
+}
+
+</style>
+
+<div>
+<p id="border_prop1"><b>HELLO CSS !!!</b></p>
+<p id="border_prop2"><b>HELLO CSS !!!</b></p>
+<p id="border_prop3"><b>HELLO CSS !!!</b></p>
+<p id="border_prop4"><b>HELLO CSS !!!</b></p>
+<p id="border_prop5"><b>HELLO CSS !!!</b></p>
+<p id="border_prop6"><b>HELLO CSS !!!</b></p>
+<p id="border_prop7"><b>HELLO CSS !!!</b></p>
+<p id="border_prop8"><b>HELLO CSS !!!</b></p>
+<p id="border_prop9"><b>HELLO CSS !!!</b></p>
+<p id="border_prop10"><b>HELLO CSS !!!</b></p>
+<p id="border_prop11"><b>HELLO CSS !!!</b></p>
+<p id="border_prop12"><b>HELLO CSS !!!</b></p>
+</div>
+
+
+<style>
+#a1
+{
+	
+	border:5px solid black;
+	border-bottom-left-radius:15px;
+	border-bottom-right-radius:15px;
+	border-top-left-radius:25px;
+	border-top-right-raidius:15px;
+	padding:10px;
+	text-align:center;
+	text-background-color:lightblue;
+	border-bottom-width:10px;
+	
+	
+}
+</style>
+<div>
+<p id="a1">HELLO CSS.css Welcome to 
+</div>	
+
+
+
+
+
+<style>
+#right
+{
+	border-right:5px solid black;
+	border-right-style:solid;
+	border-bottom-right-rdo
+	text-align:center;
+}
+</style>
+<div>
+<p id="right">HELLO CSS</p>
+</div>
+
+<br>
+<br>
+<br>
+<br>
+
+
+<style>
+#box1
+{
+	border-style:solid;
+	border-color:black;
+	height:100px;
+	width:100px;
+	text-align:center;
+	text-color:blue;
+	padding:15px;
+	background-color:lightblue;
+	background-image:url(flower.jpg);
+	z-index:-1;
+	-webzkit-image-reflect:below;
+}
+</style>
+<div id="box1">
+<p>hello to border to right size</p><br><br>
+<img src="C:\Users\shubh\Downloads\flower.jpg" height="100px   width= "100px"> 
+</div>
+<br>
+<br>
+
+<style>
+.clip
+{
+	position:absolute;
+	clip:rect(0px,60px,200px,0px);
+}
+</style>
+<div class="clip">
+<img src="C:\Users\shubh\Downloads\flower.jpg" width="200px" height="100px" align="middle">
+</div>
+<br>
+<br>
+<br>
+
+
+
+
+<style>
+#column_count
+{
+	column-count:3;
+	column-gap:40px;
+	column-rule-color:black;
+	column-rule-style:double;
+	column-rule-width:10px;
+	text-size:25px;
+	text-color:blue;
+}
+</style>
+<div>
+<p id="column_count" font size="20">Hello css iam right now learning web development and this gets 
+only over i i will be able to build a resposnsive working website for me basicallly the 
+ecommerce store or any other ecommerce/or selling website lets see tilll what extend i can 
+use my coding skill and at what level i will build best of itttt....................</p>
+</div>
+
+<br>
+<br>
+
+
+ <style>
+#cursor
+{
+	cursor:cell;
+}
+</style>
+<div>
+<p id="cursor">cursor changes to cell type</p>
+</div>
+
+
+
+<style>
+#font
+{
+	font:18px Arial,sans-serif;
+}
+</style>
+<div>
+<p id="font">hello</p>
+</div>
+
+
+
+<br>
+<br>
+
+<style>
+#margin
+{
+	margin:35px;
+	margin-bottom:25px;
+	margin-top:25px;
+	margin-left:25px;
+	margin-right:150px;
+	margn-top :25px;
+		
+}
+</style>
+<div>
+<p ="aktu";
+</div>
+
+
+
+
+<style>
+#opacity
+{
+	opacity:0.5;
+}
+</style>
+<div>
+<p id="opacity">CSS</p>
+</div>
+
+
+
+<style>
+#outline
+{
+	outline:5px solid blue;
+	padding-left:500px;
+}
+</style>
+<div>
+<p id="outline">Hellow everyone</p>
+</div>
+
+
+
+<style>
+#resize
+{	
+	border:5px solid blue;
+	padding:20px;
+	width:300px;
+	resize:both;
+	overflow:auto;
+	
+}
+</style>
+<div>
+<p id="resize">hello to everyone here i am to just learn css and complete web development lets
+see at what time i will complete it weather i will say that o will try to copmlete by tommorow
+</p>
+</div>
+
+
+
+<style>
+img
+{
+	display:block;
+	margin-left:auto;
+	margin-right:auto;
+
+}
+</style>
+<div>
+<img src="C:\Users\shubh\Downloads\flower.jpg" style="width:50%;">
+</div>
+
+
+<style>
+<!-- set margin for all 4 sides-->
+#margin
+{
+	margin-left:100px;
+
+}
+</style>
+<div>
+<p id="margin">HELLO CSS</p>
+</div>
+
+
+
+
+<style>
+#outline
+{
+	outline:5px solid blue;
+	outline:4px solid blue;
+	outline-color:blue;
+	outline-style:solid;
+	outline-width:thick;
+}
+</style>
+<div>
+<p id="outline">HELLO CSS</p>
+</div>
+	
+
+
+
+
+
+<style>
+.overflow
+{
+	background-color:lightblue;
+	width:300px;
+	height:110px;
+	overflow:scroll;	
+}
+</style>
+<div>
+<p class="overflow">overflow property is used here right nw i have learned how to setr margin
+from left to right top,and bottom but for img i have to use display as fixed and margin as
+auto its left and right ,.......now earlier we use resize property to edit the size by user now i will fix the lenght 
+and user cannot channge the sixe of box</p>
+</div>
+
+
+
+
+<style>
+#padding
+{
+	border:2px solid red;
+	padding:20px;
+	padding-left:50px;
+	padding-right:100px;
+	padding-top:50px;
+	padding-bottom:50px;
+	width:300px;
+	resize:both;
+	overflow:auto;
+}
+</style>
+<div>
+<p id="padding">HELLO CSS </p>
+</div>
+
+
+<style>
+#rotate
+{
+	border:5px solid black;
+	background-color:lightblue;
+	height:300px;
+	width:300px;
+	display:fixed;
+	margin-left:auto;
+	margin-right:auto;
+	rotate:30deg;
+
+	background-image:url(flower.jpg)
+}
+</style>
+<div>
+<p id="rotate">HELLO CSS HERE USING THE ROTATE FUNCTION</p>
+<img src="C:\Users\shubh\Downloads\flower.jpg" width="300px" height="300px">
+</div>
+
+
+
+
+<!--
+<style>
+div
+{
+	width:100px;
+	height:100px;
+	background:red;
+	transition:width 2s;
+}
+
+div:hover
+{
+	width:300px;
+}
+
+</style>
+<div></div>
+
+-->
+
+
+<br><br><br>
+
+<a href="https://www.google.co.in/">google</a><br>
+
+<a href="https://www.google.co.in/" target="_self">google:in same tab</a><br>
+
+<a href="https://www.google.co.in/" target="_blank">google:in next tab</a><br>
+
+<a href="mailto:shubhamsingh076844gmail.com">send mailto:</a><br>
+
+<a href="http://www.primecitystore.worpress.com"><img src="C:\Users\shubh\Downloads\flower.jpg"
+ alt="this is an flower image"  width="100px" height="100px"></a>
+
+
+
+<details>
+<summary>my introduction</summary>
+<p>my name is shubham singh and i am from rich family and now i am pursuing btech from
+ucer and i am using summary tag inside details tag so that when clicked then a para is 
+opened</p>
+</details>
+
+
+<!--
+<nav>
+<a href="/html/">HTML</a>|
+<a href="/css/">CSS</a>|
+<a href="/js/" >JS</a>|
+</nav>
+
+-->
+
+<style>
+#navigation
+{
+	border:1px solid black;
+	background-color:lightblue;
+	display:inline;
+}
+</style>
+<div>
+<nav id="navigation">
+<ol type="square">
+<li><a href="https://www.google.com">GOOGLE</a></li>
+<li><a href="https://www.apple.com">Apple </a></li>
+<li><a href="https://www.digitalfry.com>Digital fry</a></li>
+<li><a href="https://www.amazon.com">amazon</a></li>
+</nav>
+</div>
+
+
+
+<style>
+nav
+{
+	border:2px solid black;
+	background-color:lightgreen;
+	text-align:center;
+	font-size:30px;
+	color:green;
+	padding:35px;
+}
+</style>
+<div>
+<nav>
+<a href="https://www.amazon.com">amazon</a>
+<a href="https://www.google.com">google</a>
+<a href="https://www.flipkart.com">flipkart</a>
+<a href="https://www.meesho.com">meesho</a>
+</nav>
+</div>
+
+
+
+
+<!-- Adding emoji 's using code for particular emoji-->
+<p><h1><center>&#128516   &#128525     &#128151</h1></center></p>
+
+<!-- for youtube videos -->
+<iframe height="300px" width="400px" src="https://www.youtube.com/embed/tgbNymZ7vqY">
+</iframe>
+
+
+
+<!-- creating menu tag-->
+<style>
+.topnav
+{
+	overflow:hidden;
+	background-color:#333;
+}
+
+.topnav a
+{
+	float:left;
+	color:#f2f2f2;
+	text-align:center;
+	padding:14px 16px;
+	text-decoration:none;
+	font-size:17px;
+}
+
+.topnav a:hover
+{
+	background-color:#ddd;
+	color:white;
+}
+
+.topnav a.active
+{
+	background-color:#04AA6D;
+	color:white;
+}
+</style>
+<div class="topnav">
+<a class="active" href="#home">HOME</a>
+<a class="active" href="#news">NEWS</a>
+<a class="active" href="#Contact">CONTACT</a>	
+<a class="active" href="#about">ABOUT</a>
+</div>
+
+
+
+
+<!-- two types of links are: absolute link and relative link -->
+<a href="https://www.meesho.com" target="_blank">Meesho</a><br><br>
+<a href="C:\Users\shubh\Documents\website_making\sample.html">click to visit sample.html file</a>
+
+<br>
+
+<audio controls>
+<source src="C:\Users\shubh\Downloads\primesong.mp3" type="audio/mpeg">
+</audio>
+
+
+
+
+
+
+</body> 
+</html>
