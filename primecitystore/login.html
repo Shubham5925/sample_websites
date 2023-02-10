@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Save Web Form Data to Spreadsheets</title>
+	<script
+		src="https://code.jquery.com/jquery-3.4.1.js"
+		integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+		crossorigin="anonymous"></script>
+	<script>
+		function SubForm (){
+			$.ajax({
+				url:"https://api.apispreadsheets.com/data/IWT7NuddrxTxYsIR/",
+				type:"post",
+				data:$("#myForm").serializeArray(),
+				success: function(){
+					alert("Form Data Submitted :)")
+				},
+				error: function(){
+					alert("There was an error :(")
+				}
+			});
+		}
+	</script>
+</head>
+<body bgcolor="#f4ecf7">
+	<form id="myForm">
+		<label>Fullname : </label>
+		<input name="fullname" />
+		<br/>
+		<label>Email : </label>
+		<input name="email" />
+		<br/>
+		<label>Phone Number : </label>
+		<input name="number" />
+		<br/>
+		<label>Favourite Product : </label>
+		<input name="message" />
+		<br/>
+	</form>
+	<button onclick='SubForm()'>Submit</button>
+
+<div>
+<input type="button" value="Back" onclick="goBack()" style="background-color:black; margin-left:900px; font-size:20px; color:white; box-shadow:3px 3px;">
+<input type="button" value="Forward" onclick="goForward()"   style="background-color:black; margin-left:10px; font-size:20px; color:white; box-shadow:3px 3px;">
+</div>
+<!--CSS code starts here-->
+<style>
+
+label
+{
+	margin-left:12px;
+	font-size:32px;
+	color:#260349;
+	
+}
+input
+{
+	border:2px solid black;
+	width:300px;
+	height:20px;
+	text-color:#0540f5;
+	font-size:25px;
+	box-shadow:3px 3px;
+	padding:2px;
+}
+form
+{
+	
+	border:3px solid black;
+	width:650px;
+	height:210px;
+	margin-top:200px;
+	margin-left:450px;
+	radius:20px;
+	box-shadow:10px 10px;
+	background-color:#29edbb;
+}
+button
+{
+	margin-top:20px;
+	margin-left:730px;	
+	font-size:25px;
+	background-color:#2c54f3;
+	color:white;
+	padding:5px;
+	border:1px solid black;
+	cursor:pointer;
+}
+</style>
+
+
+<!--Js code starts here-->
+
+<script type="text/javascript">
+	function goBack()
+	{
+		window.history.back();
+	}
+	function goForward()
+	{
+		window.history.forward();
+	}
+</script>
+
+
+</body>
+</html>
