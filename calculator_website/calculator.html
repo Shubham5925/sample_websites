@@ -1,0 +1,162 @@
+<!Doctype html>
+<html lang="en">
+<head>
+<meta chartag="UTR-8">
+<meta name="description" content="This is a calculator">
+<meta name="author" content="Shubham singh">
+<title>calculator</title>
+</head>
+
+<body>
+<h1 id="top_design"><center><b> CALCULATOR </b></center></h1>
+ 
+<div id="back_design">
+<fieldset id="fieldset">
+<legend><b><u><center>Calculator</center></u></b></legend>
+<div id="button_design">
+<input type="number" name="first" id="first" step="any"/>
+</div>
+<pre>
+              <select id="opt">
+              <option value="+">+</option>
+              <option value="-">-</option>
+              <option value="*">*</option>
+              <option value="/">/</option>
+              </select>
+</pre>
+<div id="button_design">
+<input type="number" name="second" id="second" step="any"/>
+</div>
+<br>
+
+
+<button onclick="calc()" id="calc_button">Calculate</button>
+
+<input type="text" name="" id="result"   readonly=""/>
+
+<input type="reset" value="Try again">
+
+<!--<input type="text" onfocus="this.value=''" name="shubham">-->
+
+</fieldset>
+
+</div>
+
+
+
+
+<!--javascript code here -->
+<script type="text/javascript">
+	function calc()
+	{
+		var x=document.getElementById("first").value;
+		var y=document.getElementById("second").value;
+		var opt=document.getElementById("opt").value;
+		
+		if(opt=="+")
+		{
+			var result=parseInt(x)+parseInt(y);
+		}	
+		if(opt=="-")
+		{
+			if(parseInt(x)>parseInt(y))
+				var result=parseInt(x)-parseInt(y);
+			if(parseInt(x)<parseInt(y))
+				var result=parseInt(y)-parseInt(x);
+		}
+		if(opt=="*")
+		{
+			var result=parseInt(x)*parseInt(y);
+		}
+		if(opt=="/")
+		{
+			var result=parseInt(x)/parseInt(y);
+		}
+		document.getElementById("result").value=result;
+	}
+</script>
+
+<!--CSS code here-->
+<style>
+#top_design
+{
+	border:5px solid black;
+	background-color:lightgreen;
+	padding :20px;
+	width:500px;
+	height:40px;
+	margin-left:auto;
+	margin-right:auto;
+	text-color:black;
+}
+</style>
+
+<style>
+#button_design
+{
+	border:2px solid black;
+	padding:3px;
+	text-color:green;
+	width:300px;
+	height:20px;
+	background-color:lightblue;
+	margin-left:100px;
+	align-items:center;
+}
+</style>
+
+<style>
+#calc_button
+{
+	border:3px solid black;
+	background-color:lightpink;
+	border-radius:3px;
+	width:300px;
+	height:30px;
+	align-items:center;
+	cursor:pointer;
+	
+	
+}
+</style>
+
+<style>
+#fieldset
+{
+	border:5px solid black;
+	width:600px;
+	height:200px;
+	background-color:#b9c6f0;
+	border-radius:5px;
+	margin-left:auto;
+	margin-right:auto;
+	margin-top:80px;
+	box-shadow:12px 12px;
+	
+
+}
+</style>
+
+<style>
+#back_design
+{
+	border:3px solid black;
+	background-color:#fecf6a;
+	width:700px;
+	height:400px;
+	margin-left:auto;
+	margin-right:auto;
+}
+</style>
+				
+				
+
+
+	
+
+
+
+		
+
+</body>
+</html>
